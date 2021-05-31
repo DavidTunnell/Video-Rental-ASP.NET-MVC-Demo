@@ -108,3 +108,7 @@ D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video-Rental.dll
 D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video-Rental.pdb
 D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migrations.InitialModel.resources
 D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video-Rental.csproj.GenerateResource.cache
+D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migrations.AddIsSubscribedToNewsletter.resources
+D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migrations.AddMembershipType.resources
+D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migrations.PopulateMembershipTypes.resources
+D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migrations.ApplyAnnotationsToCustomerName.resources
