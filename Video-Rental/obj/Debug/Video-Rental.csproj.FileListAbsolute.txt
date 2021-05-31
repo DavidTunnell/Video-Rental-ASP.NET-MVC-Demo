@@ -106,3 +106,5 @@ D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video-Rental.cspr
 D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video-Rental.csproj.CopyComplete
 D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video-Rental.dll
 D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video-Rental.pdb
+D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migrations.InitialModel.resources
+D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video-Rental.csproj.GenerateResource.cache
