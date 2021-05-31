@@ -36,7 +36,7 @@ namespace Video_Rental.Controllers
 
         public ActionResult Details(int id)
         {
-            //get the customer by ID from the list of customers from DB
+            //get the customer by ID from the list of customers from DB. Include associated objects from foreign keys
             var customer = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.Id == id);
 
             if (customer == null)

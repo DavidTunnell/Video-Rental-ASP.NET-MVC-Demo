@@ -5,26 +5,48 @@ using System.Web;
 using System.Web.Mvc;
 using Video_Rental.Models;
 using Video_Rental.ViewModels;
+using System.Data.Entity;
 
 namespace Video_Rental.Controllers
 {
     public class MoviesController : Controller
     {
+        private ApplicationDbContext _context;
+        public MoviesController()
+        {
+            _context = new ApplicationDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
+
         public ViewResult Index()
         {
-            var movies = GetMovies();
+            var movies = _context.Movies.Include(c => c.Genre).ToList();
 
             return View(movies);
         }
-
-        private List<Movie> GetMovies()
+        public ActionResult Details(int id)
         {
-            return new List<Movie>
-            {
-                new Movie { Id = 1, Name = "Star Wars" },
-                new Movie { Id = 2, Name = "Billy Madison" }
-            };
+            var movies = _context.Movies.Include(c => c.Genre).SingleOrDefault(m => m.Id == id);
+
+            if (movies == null)
+                return HttpNotFound();
+
+            return View(movies);
+
         }
+
+        //private List<Movies> GetMovies()
+        //{
+        //    return new List<Movies>
+        //    {
+        //        new Movie { Id = 1, Name = "Star Wars" },
+        //        new Movie { Id = 2, Name = "Billy Madison" }
+        //    };
+        //}
 
         //public ActionResult Edit(int id)
         //{
@@ -74,7 +96,7 @@ namespace Video_Rental.Controllers
 
             var viewModel = new RandomMovieViewModel
             {
-                Movie = movie,
+                Movies = movie,
                 Customers = customers
             };
 
