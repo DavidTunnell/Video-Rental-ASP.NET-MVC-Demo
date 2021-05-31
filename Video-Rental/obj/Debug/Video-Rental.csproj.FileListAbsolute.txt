@@ -112,3 +112,4 @@ D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migr
 D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migrations.AddMembershipType.resources
 D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migrations.PopulateMembershipTypes.resources
 D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migrations.ApplyAnnotationsToCustomerName.resources
+D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migrations.AddNameInMemembershipTypes.resources
