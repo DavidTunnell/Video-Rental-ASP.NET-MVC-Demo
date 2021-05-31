@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ComponentModel.DataAnnotations;
 using System.Web;
 
 namespace Video_Rental.Models
@@ -8,6 +9,7 @@ namespace Video_Rental.Models
     public class MembershipType
     {
         public int Id { get; set; }
+        [Required]
         public string Name { get; set; }
         public short SignUpFee { get; set; }
         public byte DurationInMonths { get; set; }
