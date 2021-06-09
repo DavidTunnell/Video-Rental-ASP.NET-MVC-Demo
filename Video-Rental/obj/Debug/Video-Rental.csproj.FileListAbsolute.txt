@@ -115,3 +115,4 @@ D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migr
 D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migrations.AddNameInMemembershipTypes.resources
 D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migrations.AddBirthdayToCustomer.resources
 D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migrations.CreateAndPopulateGenreAndMovies.resources
+D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migrations.UpdateMovieTable.resources
