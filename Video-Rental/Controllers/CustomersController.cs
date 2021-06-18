@@ -33,6 +33,7 @@ namespace Video_Rental.Controllers
             var membershipTypes = _context.MembershipTypes.ToList();
             var ViewModel = new CustomerFormViewModel
             {
+                Customer = new Customer(),
                 MembershipTypes = membershipTypes
             };
             return View("CustomerForm", ViewModel);
@@ -42,8 +43,20 @@ namespace Video_Rental.Controllers
         //using the same view model used on the view here (Model Binding) - NewCustomerViewModel
         //or the framework is also smart enough to bind the object being used - Customer
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Customer customer)
         {
+            //checks the model state and checks for validation
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new CustomerFormViewModel
+                {
+                    Customer = customer,
+                    MembershipTypes = _context.MembershipTypes.ToList()
+                };
+                return View("CustomerForm", viewModel);
+            }
+            
             //if id = 0 then they are a new customer
             if (customer.Id == 0)
             {
