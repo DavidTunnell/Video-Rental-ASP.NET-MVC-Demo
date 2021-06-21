@@ -115,3 +115,11 @@ D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migr
 D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migrations.AddNameInMemembershipTypes.resources
 D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migrations.AddBirthdayToCustomer.resources
 D:\Software Projects\Vidly\Video-Rental\Video-Rental\obj\Debug\Video_Rental.Migrations.CreateAndPopulateGenreAndMovies.resources
+D:\Software Projects\Vidly\Video-Rental\Video-Rental\bin\System.Net.Http.Formatting.dll
+D:\Software Projects\Vidly\Video-Rental\Video-Rental\bin\System.Web.Http.dll
+D:\Software Projects\Vidly\Video-Rental\Video-Rental\bin\System.Web.Http.WebHost.dll
+D:\Software Projects\Vidly\Video-Rental\Video-Rental\bin\System.Net.Http.Formatting.xml
+D:\Software Projects\Vidly\Video-Rental\Video-Rental\bin\System.Web.Http.xml
+D:\Software Projects\Vidly\Video-Rental\Video-Rental\bin\System.Web.Http.WebHost.xml
+D:\Software Projects\Vidly\Video-Rental\Video-Rental\bin\AutoMapper.dll
+D:\Software Projects\Vidly\Video-Rental\Video-Rental\bin\AutoMapper.xml
