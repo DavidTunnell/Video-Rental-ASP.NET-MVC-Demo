@@ -18,9 +18,11 @@ namespace Video_Rental.Controllers.Api
             _context = new ApplicationDbContext();
         }
         //GET /api/customers
-        public IEnumerable<CustomerDto> GetCustomers()
+        public IHttpActionResult GetCustomers()
         {
-            return _context.Customers.ToList().Select(Mapper.Map<Customer, CustomerDto>);
+            var customerDtos = _context.Customers.ToList().Select(Mapper.Map<Customer, CustomerDto>);
+
+            return Ok(customerDtos);
         }
 
         //GET /api/customers/1
@@ -59,42 +61,36 @@ namespace Video_Rental.Controllers.Api
 
         //PUT /api/customers/1
         [HttpPut]
-        public void UpdateCustomer(int id, CustomerDto customerDto)
+        public IHttpActionResult UpdateCustomer(int id, CustomerDto customerDto)
         {
             if (!ModelState.IsValid)
-            {
-                throw new HttpResponseException(HttpStatusCode.BadRequest);
-            }
-            else
-            {
-                var customerInDb = _context.Customers.SingleOrDefault(c => c.Id == id);
-                if (customerInDb == null)
-                {
-                    throw new HttpResponseException(HttpStatusCode.NotFound);
-                } else
-                {
-                    //the 2nd arguement can be used when the mapped object already exists
-                    Mapper.Map(customerDto, customerInDb);
-                    _context.SaveChanges();
-                }
-            }
+                return BadRequest();
+
+            var customerInDb = _context.Customers.SingleOrDefault(c => c.Id == id);
+
+            if (customerInDb == null)
+                return NotFound();
+
+            Mapper.Map(customerDto, customerInDb);
+
+            _context.SaveChanges();
+
+            return Ok();
         }
 
         //DELETE /api/customer/1
         [HttpDelete]
-        public void DeleteCustomer(int id)
+        public IHttpActionResult DeleteCustomer(int id)
         {
             var customerInDb = _context.Customers.SingleOrDefault(c => c.Id == id);
 
             if (customerInDb == null)
-            {
-                throw new HttpResponseException(HttpStatusCode.NotFound);
-            }
-            else
-            {
-                _context.Customers.Remove(customerInDb);
-                _context.SaveChanges();
-            }
+                return NotFound();
+
+            _context.Customers.Remove(customerInDb);
+            _context.SaveChanges();
+
+            return Ok();
         }
     }
 }
