@@ -82,10 +82,7 @@ namespace Video_Rental.Controllers
         // GET: Customer
         public ActionResult Index()
         {
-
-            //get customers from DB. Note this is a deferred execution object. Once iterated on it will actually run the SQL query. Adding ToList also makes it run. 
-            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
-            return View(customers);
+            return View();
         }
 
         public ActionResult Details(int id)
