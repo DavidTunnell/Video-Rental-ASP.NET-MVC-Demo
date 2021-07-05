@@ -2,21 +2,23 @@
 
 I followed along with the Udemy course 'The Complete ASP.NET MVC 5 Course' by Mosh Hamedani for this project. ASP.NET MVC is a server-side web framework for building dynamic, data-driven web applications. Create, Read, Update, Delete functionality was created for both forms and through a custom created RESTful Web API.
 
-A live demo can be found here: https://aspnetmvcdemovideosrental.azurewebsites.net
+A live demo can be found here: https://aspnetmvcdemovideosrental.azurewebsites.net 
+
+The free azure servers can sometimes be slow.
 
 I worked on the following skills while building this. 
 
-*.NET MVC
-*Entity Framework (Code First)
-*Domain Model Business Rules
-*Form building and CRUD
-*Client and Server Side Validation
-*Business Rule Validation
-*Building a RESTful API Service (Web API)
-*Data Transfer Objects (DTOs)
-*Automapper Configuration
-*jQuery and Client Side API consumption (AJAX)
-*Deploying to Azure via Visual Studio
+* .NET MVC
+* Entity Framework (Code First)
+* Domain Model Business Rules
+* Form building and CRUD
+* Client and Server Side Validation
+* Business Rule Validation
+* Building a RESTful API Service (Web API)
+* Data Transfer Objects (DTOs)
+* Automapper Configuration
+* jQuery and Client Side API consumption (AJAX)
+* Deploying to Azure via Visual Studio
 
 ## Example API Calls
 
