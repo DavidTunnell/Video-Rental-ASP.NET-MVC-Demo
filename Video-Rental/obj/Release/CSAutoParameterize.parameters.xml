@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=tcp:video-rentaldbserver.database.windows.net,1433;Initial Catalog=Video-Rental_db;Persist Security Info=True;User ID=enddream;Password=5926fAter!;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Software\ Projects\\Vidly\\Video-Rental\\Video-Rental\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="Video_Rental.Models.ApplicationDbContext-Web.config Connection String" description="Video_Rental.Models.ApplicationDbContext Connection String used in web.config by the application to access the database." defaultValue="Video_Rental.Models.ApplicationDbContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Software\ Projects\\Vidly\\Video-Rental\\Video-Rental\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Video_Rental.Models.ApplicationDbContext']/@connectionString" />
+  </parameter>
+  <parameter name="Video_Rental.Models.ApplicationDbContext_DatabasePublish-Web.config Connection String" description="Video_Rental.Models.ApplicationDbContext_DatabasePublish Connection String used in web.config by the application to access the database." defaultValue="Video_Rental.Models.ApplicationDbContext_DatabasePublish.ConnetionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Software\ Projects\\Vidly\\Video-Rental\\Video-Rental\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Video_Rental.Models.ApplicationDbContext_DatabasePublish']/@connectionString" />
+  </parameter>
+</parameters>
